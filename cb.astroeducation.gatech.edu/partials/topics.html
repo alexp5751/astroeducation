@@ -1,0 +1,8 @@
+<div ng-controller="WelcomeController">
+    <h1 id="topics-title">Topics</h1>
+    <p id="topics-question">What would you like to learn about?</p>
+    <button ui-sref="tides-topics" class="block-center topic dark-btn btn btn-default">Tides</button>
+    <button ui-sref="glossary" class="block-center topic2 dark-btn btn btn-default">Glossary</button>
+    <p ng-show="loggedIn" class="welcome-login-link">You are logged in!</p>
+    <a href ng-show="!loggedIn" ui-sref="login" class="welcome-login-link">Log in or register to enable saving your progress!</a>
+</div>

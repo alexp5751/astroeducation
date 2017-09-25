@@ -1,0 +1,182 @@
+{
+    "welcome": {
+        "camera_position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "camera_lookat": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+        }
+    },
+    "topics": {
+        "camera_position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "camera_lookat": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+        }
+    },
+    "login": {
+        "camera_position": {
+            "x": 0,
+            "y": 1000,
+            "z": 0
+        },
+        "camera_lookat": {
+            "x": 0,
+            "y": 1000,
+            "z": 1
+        }
+    },
+    "tides-topics": {
+        "camera_position": {
+            "x": 1000,
+            "y": 0,
+            "z": 0
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 1
+        }
+    },
+    "tides-pretest": {
+        "camera_position": {
+            "x": 1000,
+            "y": 0,
+            "z": 0
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "tides-introduction": {
+        "camera_position": {
+            "x": 1000,
+            "y": 20,
+            "z": -70
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "tides-existence": {
+        "camera_position": {
+            "x": 930,
+            "y": 20,
+            "z": -40
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "tides-gravity": {
+        "camera_position": {
+            "x": 900,
+            "y": 20,
+            "z": 30
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "tides-daily-changes": {
+        "camera_position": {
+            "x": 930,
+            "y": 20,
+            "z": 100
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "tides-two-high-tides": {
+        "camera_position": {
+            "x": 1000,
+            "y": 20,
+            "z": 130
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "tides-yearly-changes": {
+        "camera_position": {
+            "x": 1070,
+            "y": 20,
+            "z": 100
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "tides-final-app": {
+        "camera_position": {
+            "x": 1100,
+            "y": 20,
+            "z": 30
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "tides-summary": {
+        "camera_position": {
+            "x": 1070,
+            "y": 20,
+            "z": -40
+        },
+        "camera_lookat": {
+            "x": 1000,
+            "y": 0,
+            "z": 30
+        }
+    },
+    "roche-limit": {
+        "camera_position": {
+            "x": -1000,
+            "y": 0,
+            "z": 0
+        },
+        "camera_lookat": {
+            "x": -1000,
+            "y": 0,
+            "z": 1
+        }
+    },
+    "glossary": {
+        "camera_position": {
+            "x": 0,
+            "y": -1000,
+            "z": 0
+        },
+        "camera_lookat": {
+            "x": 0,
+            "y": -1000,
+            "z": 1
+        }
+    }
+}

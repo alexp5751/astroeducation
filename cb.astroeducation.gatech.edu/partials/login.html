@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="login-container col-xs-6" ng-controller="LoginController">
+        <div ng-show="!showForm">
+            <p class="alert alert-success">You are already logged in.</p>
+        </div>
+        <form ng-show="showForm" name="loginForm" ng-submit="login(credentials)">
+            <h2 class="form-title">Login</h2>
+            <p ng-show="message" class="{{ messageClass }}">{{ message }}</p>
+            <p class="error-text" ng-show="loginForm.username.$touched && loginForm.username.$error.required">Username is required.</p>
+            <input name="username" ng-model="credentials.username" type="username" class="form-control" placeholder="Username" ng-required="true" />
+            <p class="error-text" ng-show="loginForm.password.$touched && loginForm.password.$error.required">Password is required.</p>
+            <input name="password" ng-model="credentials.password" type="password" class="form-control" placeholder="Password" ng-required="true" />
+            <button ng-disabled="!loginForm.$valid" class="dark-btn btn btn-default btn-form-control" type="submit">Login</button>
+        </form>
+    </div>
+    <div class="register-container col-xs-6" ng-controller="RegisterController">
+        <form ng-show="showForm" name="registerForm" ng-submit="register(credentials)">
+            <h2 class="form-title">Register</h2>
+            <p ng-show="message" class="{{ messageClass }}">{{ message }}</p>
+            <p class="error-text" ng-show="registerForm.username.$touched && registerForm.username.$error.required">Username is required.</p>
+            <input name="username" ng-model="credentials.username" class="form-control" placeholder="Username" ng-required="true" />
+            <p class="error-text" ng-show="registerForm.password.$touched && registerForm.password.$error.required">Password is required.</p>
+            <input name="password" ng-model="credentials.password" type="password" class="form-control" placeholder="Password" ng-required="true" />
+            <p class="error-text" ng-show="registerForm.c_password.$touched && registerForm.c_password.$error.required">Confirm password is required.</p>
+            <p class="error-text" ng-show="registerForm.c_password.$touched && registerForm.c_password.$error.compareTo">Passwords must match.</p>
+            <input name="c_password" ng-model="confirmPassword" type="password" class="form-control" placeholder="Confirm Password" ng-required="true" compare-to="credentials.password" />
+            <button ng-disabled="!registerForm.$valid" class="dark-btn btn btn-default btn-form-control" type="submit">Register</button>
+        </form>
+    </div>
+    <button href ui-sref="topics" class="btn dark-btn back-button"><i class="glyphicon glyphicon-arrow-left"></i></button>
+</div>

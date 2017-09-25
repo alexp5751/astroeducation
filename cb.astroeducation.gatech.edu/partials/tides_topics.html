@@ -1,0 +1,24 @@
+<div ng-controller="TidesController" id="tides-topic-container">
+    <h1 id="tides-title">Tides</h1>
+    <p id="sub-introduction-chapter">a closer look at what they are and why they exist</p>
+    <br/>
+    <br/>
+    <h3 id="pretest-tides-text">Take a pretest to show us what you already know...</h3>
+    <button ui-sref="tides-pretest" class="pretest tides-topic dark-btn btn btn-default">TAKE THE PRE-TEST</button>
+    <h3 id="select-tides-text">Or jump straight into the content and start learning!</h3>
+    <div class="row">
+        <div class="col-xs-6">
+            <button ui-sref="tides-introduction" class="tides-topic dark-btn btn btn-default">1. INTRODUCTION</button>
+            <button ui-sref="tides-existence" class="tides-topic dark-btn btn btn-default">2. EXISTENCE OF TIDES</button>
+            <button ui-sref="tides-gravity" class="tides-topic dark-btn btn btn-default">3. EQUATION OF GRAVITY</button>
+            <button ui-sref="tides-daily-changes" class="tides-topic dark-btn btn btn-default">4. DAILY CHANGES IN TIDES</button>
+        </div>
+        <div class="col-xs-6">
+            <button ui-sref="tides-two-high-tides" class="tides-topic dark-btn btn btn-default">5. TWO HIGH TIDES PER DAY</button>
+            <button ui-sref="tides-yearly-changes" class="tides-topic dark-btn btn btn-default">6. YEARLY CHANGES IN TIDES</button>
+            <button ui-sref="tides-final-app" class="tides-topic dark-btn btn btn-default">7. FINAL EVALUATION</button>
+            <button ui-sref="tides-summary" class="tides-topic dark-btn btn btn-default">8. CONCLUSION</button>
+        </div>
+    </div>
+    <button href ui-sref="topics" class="btn dark-btn back-button"><i class="glyphicon glyphicon-arrow-left"></i></button>
+</div>

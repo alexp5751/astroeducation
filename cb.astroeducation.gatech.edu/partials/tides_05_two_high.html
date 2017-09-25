@@ -1,0 +1,41 @@
+<div ng-controller="TidesPageController" class="alpha-container">
+    <h3>Why are there two high tides?</h3>
+    <p>It turns out there’s not one, but two, high tides every day at a given point on Earth’s surface.</p>
+    <p>It is easiest to think of gravity affecting each object as if the entire object is one solid, non-deformable shape. This is not the case. The Earth pulls on your head slightly less than it pulls on your feet, because your head is farther away from
+        the center of the Earth. The difference is negligible in most cases. When operating on an astronomical scale, these differences become large enough to affect our lives.</p>
+    <p>If we think the Earth as a perfect sphere, and about the ocean as a sheet of water evenly covering the earth’s surfaces, you’ll note that the water at the <glossary-word word="sublunar" display-word="sublunar"></glossary-word> point is ever so slightly closer to the moon than the surface beneath it is. This results
+        in slightly more gravitational pull on the ocean than on the surface right under it.</p>
+
+    <h3>Try it out! What is the difference in force between the near edge and center of the Earth?</h3>
+    <img src="/images/d.png" style="width:40%;height:40%" class="center-block"> <img src="../images/dprime.png" style="width:40%;height:40%" class="center-block" />
+    <p><br/></p>
+    <quiz name="two-tides-difference-in-force"></quiz>
+    <p><br/></p>
+    <p>The water directly under the moon (at the Sublunar point) is closer to the moon, so gravity pulls it up above the surrounding Earth. At the same time, the earth is closer to the moon than the water on the far side of Earth, so the distance between
+        the seafloor and water level on that side will also be exaggerated.</p>
+    <p>It’s the difference in gravitational force between the top of the water and the land underneath it that explains the tides. Gravity pulls harder on the near side of the Earth than the far side of Earth.</p>
+    <p>At certain times, the sun and moon come into alignment and their gravitational effects add up. Twice a month, the Earth experiences spring and neap tides depending on the alignment of the sun and the moon relative to the Earth. During the spring tides,
+        the sun and the moon are aligned on the same side of the Earth. This generates tides that are higher than average. On the other hand, neap tides occur when the moon is at a right angle from the sun relative to the Earth. The gravitational pull
+        from the sun and the moon partially cancel each other, resulting in relatively lower tides.</p>
+
+    <p><br/></p>
+    <h3>Application Description</h3>
+    <p>The green sphere in the center of the application represents the Earth. It has two layers of blue rings, which represent the gravitational pull on that side of Earth. </p>
+    <p>The sun and the moon start out further away from the Earth. You can observe how their gravitational pulls affect the rings around Earth by clicking and dragging the sun and moon and changing their positions. </p>
+    <p>We recommend enabling the force vectors so that you can better see the direction and magnitude of the force of gravity as you change the position of the moon.</p>
+
+    <h3>Prompts</h3>
+    <ol>
+       <li>Compare the size of the force arrows closest and furthest from the sun and moon. Compare those arrows to the Earth's force arrow. The difference in magnitudes is what causes the two high tides.</li>
+       <li>Try removing the sun, and moving the moon far away. Notice how the force arrows disappear and how the particles return to a circular formation. Due to the inverse squared relationship of gravity, the force drops off rapidly as the moon moves away. This causes the tides to return to their resting sea level.</li>
+       <li>Try moving the moon close to the earth: Notice how the dots form an ellipse with the major axis in the direction of the moon. For any location of the moon, the two high tides are on the two sides of the earth in line with the moon.</li>
+       <li>What positions do the sun and moon need to be in to create a spring tide? What about a neap tide?</li>
+    </ol>
+
+    <div id="game-container"></div>
+    <script type="text/javascript" src="/scripts/apps/tide_particles_app.js"></script>
+
+    <button href ui-sref="tides-topics" class="btn dark-btn home-button"><i class="glyphicon glyphicon-home"></i></button>
+    <button href ui-sref="tides-daily-changes" class="btn dark-btn back-button"><i class="glyphicon glyphicon-arrow-left"></i></button>
+    <button href ui-sref="tides-yearly-changes" class="btn dark-btn forward-button"><i class="glyphicon glyphicon-arrow-right"></i></button>
+</div>

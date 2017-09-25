@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - "80:80"
+    volumes:
+      - ./api:/var/www/html
+    environment:
+      - MYSQL_HOST=mysql
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql/mysql-server:5.6
+    ports:
+      - "3306:3306"
+    volumes:
+      - /var/lib/mysql
+      - ./build/docker/config/my.cnf:/my.cnf:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes

@@ -1,0 +1,26 @@
+{
+  "name": "astroeducation",
+  "version": "1.0.0",
+  "description": "Website for teaching astronomy concepts through interactive methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start tests/karma.conf.js",
+    "func-test": "./node_modules/protractor/bin/protractor tests/protractor.conf.js",
+    "webdriver": "./node_modules/protractor/bin/webdriver-manager start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.gatech.edu/jr25/astroeducation.git"
+  },
+  "author": "CoffeeBeans",
+  "dependencies": {
+    "protractor": "^4.0.0",
+    "karma": "^1.3.0",
+    "angular-mocks": "^1.5.0",
+    "angular-route": "^1.5.0"
+  },
+  "devDependencies": {
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
+  }
+}

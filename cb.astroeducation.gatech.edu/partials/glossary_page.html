@@ -1,0 +1,7 @@
+<div ng-controller="GlossaryController" class="alpha-container">
+	<h2>Glossary</h2>
+	<div ng-repeat="(key, value) in glossary">
+		<p><b><span class="title-case">{{key}}</span></b>: {{value}}</p>
+	</div>
+	<button href ui-sref="topics" class="btn dark-btn back-button"><i class="glyphicon glyphicon-arrow-left"></i></button>
+</div>
